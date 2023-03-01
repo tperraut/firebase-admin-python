@@ -52,7 +52,7 @@ setup(
     long_description=long_description,
     url=about['__url__'],
     project_urls={
-        'Source': 'https://github.com/tperraut/firebase-admin-python',
+        'Source': 'https://github.com/tperraut/firebase-admin-python@pony',
     },
     author=about['__author__'],
     license=about['__license__'],
