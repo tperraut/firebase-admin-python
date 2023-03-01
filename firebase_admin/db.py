@@ -619,7 +619,7 @@ class Query:
           FirebaseError: If an error occurs while communicating with the remote database server.
         """
         result = self._client.body('get', self._pathurl, params=self._querystr)
-        if isinstance(result, (dict, list)) and self._order_by != '$priority':
+        if isinstance(result, (dict, list)) and self._order_by != '$priority' and self._order_by != '$key':
             return _Sorter(result, self._order_by).get()
         return result
 
